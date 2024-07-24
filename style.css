@@ -1,0 +1,230 @@
+body{
+    background-color: #000000;
+}
+
+.database{
+    position: absolute;
+    left: 1800px;
+}
+
+.container{
+    position: absolute;
+    width: 78vw;
+    height: 62vh;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 70px;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+
+/*signup*/
+.signup-container{
+    position: absolute;
+    width: 78vw;
+    height: 76vh;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    padding-top: 198px;
+    box-sizing: border-box;
+}
+
+.title-header{
+    width: 50%;
+    height: 100%;
+}
+
+.flex-right{
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+}
+
+.title{
+    position: absolute;
+    top: 30px;
+    left: 40px;/*20*/
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Chillax', sans-serif;
+    font-size: calc(62vh * 0.1416);
+    font-weight: calc(78vw * 0.399);
+    line-height: calc(62vh * 0.198);
+}
+
+.letter-g{
+    color: #ed1145;
+}
+
+.letter-l{
+    color: #ffffff;
+}
+
+.header{
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    width: calc(78vw * 0.298);
+    height: calc(62vh * 0.09587);
+    color: white;
+    font-family: 'General Sans', sans-serif;
+    font-size:  calc(62vh * 0.0708);
+    font-weight: calc(78vw * 0.266);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-header{
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: calc(78vw * 0.298);
+    height: calc(62vh * 0.09587);
+    color: white;
+    font-family: 'General Sans', sans-serif;
+    font-size:  calc(62vh * 0.0708);
+    font-weight: calc(78vw * 0.266);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*signup*/
+.continue{
+    position: absolute;
+    top: 55px;
+    left: 60px;
+    width: calc(78vw * 0.298);
+    height: calc(62vh * 0.09587);
+    color: white;
+    font-family: 'General Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+}
+
+
+/*signup*/
+.username{
+    width: calc(78vw * 0.5046);
+    height: calc(62vh * 0.15929);
+    background-color: #1e1e1e;
+    border: 2.5px solid #DFB150;
+    color: #DCDCDC;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: calc(62vh * 0.15929 * 0.4157);
+}
+
+.pass-container, .confirm-pass{
+    position: relative;
+}
+
+.pass, .email{
+    width: calc(78vw * 0.5046);
+    height: calc(62vh * 0.15929);
+    background-color: #1e1e1e;
+    border: 2.5px solid #DFB150;
+    color: #DCDCDC;
+    padding: 10px;/*10*/
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: calc(62vh * 0.15929 * 0.4157);
+}
+
+/*signup*/
+.confirm{
+    width: calc(78vw * 0.5046);
+    height: calc(62vh * 0.15929);
+    background-color: #1e1e1e;
+    border: 2.5px solid #DFB150;
+    color: #DCDCDC;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: calc(62vh * 0.15929 * 0.4157);
+}
+
+.sign-button{
+    background-color: #ED1145;
+    border-radius: 60px;
+    width: calc(78vw * 0.174);
+    height: calc(62vh * 0.117994);
+    font-family: 'General Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.account-actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.create{
+    background-color: transparent;
+    font-family: 'General Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+/*signup*/
+.exist{
+    background-color: transparent;
+    font-family: 'General Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    padding-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer{
+    width: 100%;
+    height: 56px;
+    font-family: 'General Sans', sans-serif;
+    color: #FFFFFF;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p{
+    margin: 0;
+}
+
+
+
+
