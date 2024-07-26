@@ -36,11 +36,4 @@ document.addEventListener('DOMContentLoaded', function() {
             categories.classList.add('inactive-scrollbar');
         }, 500);
     });
-
-    const carousel = document.querySelector('.carousel');
-    
-    carousel.addEventListener('wheel', (e)=> {
-        e.preventDefault();
-        carousel.scrollLeft += e.deltaY;
-    });
 });
