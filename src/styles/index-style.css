@@ -1,0 +1,208 @@
+    /* Search Bar */
+        .searchbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            left: 16px;
+            width: 381px;
+            height: 80px;
+            padding-right: 38px;
+        }
+
+        .searchbar__form {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--gap-xl);
+            position: relative;
+            margin-bottom: var(--gap-base);
+            background: grey;
+        }
+
+        .searchbar__input {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+            border: none;
+            font-family: var(--font-General-Sans);
+            font-size: var(--font-sizes-sm);
+            font-weight: 400;
+            color: var(--clr-wht);
+            background-color: var(--clr-dkgray);
+            padding-left: 38px;
+        }
+
+        .searchbar__input::placeholder {
+            color: var(--clr-ltgray);
+        }
+
+        .searchbar__btn {
+            position: absolute;
+            top: 20%;
+            right: -16px;
+            width: 48px;
+            height: 48px;
+            background: none;
+            border: none;
+        }
+
+    /* Categories */
+        .categories {
+            width: 365px;
+            height: 380px;
+            overflow-y: auto;
+            border-radius: var(--gap-xl);
+            background: var(--clr-dkgray);
+            margin-top: var(--gap-base); 
+            margin-left: var(--gap-lg);
+            margin-bottom: var(--gap-base);
+            padding: var(--gap-xl);
+            border: var(--gap-base) solid var(--clr-dkgray);
+            transition: scrollbar-color 0.5s ease, scrollbar-width 0.5s ease;    
+        }
+        
+        .categories__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 325px;
+            background: var(--clr-blk);
+            margin-bottom: var(--gap-lg);
+            padding: var(--gap-base) var(--gap-lg);
+            border-radius: var(--gap-base);
+        }
+        
+        .category-item label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-family: var(--font-General-Sans);
+            font-weight: 600;
+            font-size: var(--font-sizes-sm);
+            color: var(--clr-wht);
+            padding: var(--gap-base) var(--gap-base) var(--gap-base) var(--gap-base);
+        }
+        
+        .category__text {
+            flex-grow: 1;
+        }
+        
+        .category-item input[type="checkbox"] {
+            width: var(--gap-2xl);
+            height: var(--gap-2xl);
+            border: 2px solid var(--clr-wht);
+            border-radius: 4px;
+            background-color: var(--clr-blk);
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .category-item input[type="checkbox"]::after {
+            content: "";
+            display: block;
+            width: var(--gap-lg);
+            height: var(--gap-lg);
+            margin: 2px;
+            background-color: var(--clr-blk);
+            border-radius: 2px;
+            transition: background-color 0.4s ease;
+        }
+        
+        .category-item input[type="checkbox"]:checked::after {
+            background-color: var(--clr-wht);
+        }
+
+        /* Custom Scrollbar */
+            .categories::-webkit-scrollbar {
+                width: 2px;
+            }
+            
+            .categories::-webkit-scrollbar-track {
+                background: var(--clr-dkgray);
+                border-radius: 1px;
+            }
+            
+            .categories::-webkit-scrollbar-thumb {
+                background: var(--clr-gray);
+                border-radius: 1px;
+                transition: background-color 0.5s;
+            }
+            
+            .categories::-webkit-scrollbar-thumb:hover {
+                background: var(--clr-blk);
+            }
+            
+            .categories.hidden-scrollbar::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+              }
+            
+            .categories.hidden-scrollbar {
+                scrollbar-width: none;
+            }
+            
+            .categories.inactive-scrollbar::-webkit-scrollbar-thumb {
+                background: #1E1E1E; 
+            }
+
+    /* Carousel */
+        .carousel {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 35.25%;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none; 
+            -webkit-overflow-scrolling: touch;
+            margin-left: 8px;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            padding: 0 0 var(--gap-lg) var(--gap-lg);
+        }
+
+        .carousel__img {
+            inline-size: 100%;
+            aspect-ratio: 544 / 818;
+            border-radius: var(--gap-lg);
+            object-fit: cover;
+        }
+
+        .snaps-inline{
+            scroll-snap-type: inline mandatory;
+        }
+        
+        .snaps-inline > * {
+            scroll-snap-align: start;
+        }
+
+    /* Footer */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            font-family: var(--font-General-Sans);
+            font-size: var(--font-sizes-xs);
+            font-weight: 400; 
+            color: var(--clr-wht);
+            background-color: var(--clr-dkgray);
+            border-radius: var(--size-2) var(--size-2) 0px 0px;
+            margin-top: var(--size-2);
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }

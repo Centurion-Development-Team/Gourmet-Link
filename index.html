@@ -1,12 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gourmet Link</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=chillax@600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./src/styles/util.css">
+      <link rel="stylesheet" type="text/css" href="./src/styles/index-style.css">
+      <title>Gourmet Link</title>
+      <link rel="icon" type="image/x-icon" href="favicon.png">
   </head>
   <body>
-    <script type="module" src="./src/main.js"></script>
+
+    <!-- Side Menu -->
+      <section>
+        <div class="sidemenu container">
+          <div class="toggle-close" id="close"><a href="#"><img src="./src/png/icons8-close-96.png" alt="Close Menu"></a></div>
+          <ul class="sidemenu__ul">
+            <li>
+              <a class="sidemenu__items" href="index.html">
+                <img class="png" src="./src/png/icons8-home-96.png" alt="Home"/>Dashboard</a></li>
+            <li>
+              <a class="sidemenu__items" href="./pages/myRecipes.html">
+                <img class="png" src="./src/png/icons8-pen-96.png" alt="My Recipes"/>My Recipes</a></li>
+            <li>
+              <a class="sidemenu__items" href="#">
+                <img class="png" src="./src/png/icons8-heart-96.png" alt="My Favorites"/>My Favorites</a></li>
+            <li>
+              <a class="sidemenu__items" href="#">
+                <img class="png" src="./src/png/icons8-chat-96.png" alt="My Ratings"/>My Ratings</a></li>
+            <li>
+              <a class="sidemenu__items" href="#">
+                <img class="png" src="./src/png/icons8-settings-96.png" alt="Settings"/>Settings</a></li>
+          </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
+      </section>
+    
+    <!-- Top Bar -->
+      <section>
+        <div class="topbar container">
+              <div onclick="showSidemenu()" class="toggle-open" id="open">
+                <a class="topbar__item" href="#"><img src="./src/png/icons8-open-96.png" alt="Open Menu"></a></div>
+              <div class="logo">
+                <h1>
+                  <a class="topbar__logo-red" href="#">Gourmet </a>
+                  <a class="topbar__logo-wht" href="#">Link</a></h1></div>
+              <div>
+                <a class="topbar__items" href="#"><p>Sign in</p><img class="png" src="./src/png/icons8-user-96.png" alt="Settings"/></a></div>
+        </div>
+      </section>
+    
+    <!-- Main Content -->
+      <section class="main-content">
+        <!-- Search & Categories Card -->
+          <div class="left">
+            <!-- Search Bar -->
+              <div class="searchbar container">
+                <form class="searchbar__form">
+                  <input class="searchbar__input" type="text" name="" placeholder="Search...">
+                  <button class="searchbar__btn" type="submit">
+                    <img src="./src/png/icons8-search-96.png" alt=""></button>
+                </form>
+              </div>
+          
+            <!-- Categories -->
+              <div class="categories container">
+                  <ul class="categories__list">
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Small Bites</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Dips & Spreads</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Baked Goods</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Savory Meals</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Sandwiches</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Wraps</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Salads & Bowls</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Pasta & Noodles</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Grilled & Roasted</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Cakes & Pies</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                    <li class="category-item">
+                      <label>
+                        <span class="category__text">Frozen Treats</span>
+                        <input type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      
+      <!-- Carousel -->
+          <div class="carousel container snaps-inline">
+            <div class="card">
+              <div>
+                <img class="carousel__img" src="./src/png/cards-544.png" alt="Image">
+                <div class="card-text"></div>
+                <div class="exit-icon"><img src="" alt=""></div>
+              </div>
+              <div class="card-text-expand"></div>
+            </div>
+            <div class="card">
+              <div>
+                <img class="carousel__img" src="./src/png/cards-544.png" alt="Image">
+                <div class="card-text"></div>
+                <div class="exit-icon"><img src="" alt=""></div>
+              </div>
+              <div class="card-text-expand"></div>
+            </div>
+            <div class="card">
+              <div>
+                <img class="carousel__img" src="./src/png/cards-544.png" alt="Image">
+                <div class="card-text"></div>
+                <div class="exit-icon"><img src="" alt=""></div>
+              </div>
+              <div class="card-text-expand"></div>
+            </div>
+            <div class="card">
+              <div>
+                <img class="carousel__img" src="./src/png/cards-544.png" alt="Image">
+                <div class="card-text"></div>
+                <div class="exit-icon"><img src="" alt=""></div>
+              </div>
+              <div class="card-text-expand"></div>
+            </div>
+            <div class="card">
+              <div>
+                <img class="carousel__img" src="./src/png/cards-544.png" alt="Image">
+                <div class="card-text"></div>
+                <div class="exit-icon"><img src="" alt=""></div>
+              </div>
+              <div class="card-text-expand"></div>
+            </div>
+            <div class="card">
+              <div>
+                <img class="carousel__img" src="./src/png/cards-544.png" alt="Image">
+                <div class="card-text"></div>
+                <div class="exit-icon"><img src="" alt=""></div>
+              </div>
+              <div class="card-text-expand"></div>
+            </div>
+          </div>
+      </section>
+    
+    <!-- Footer -->
+      <section>
+        <div class="footer container">
+          <p>All Rights Reserved © Gourmet Link 2024</p>
+        </div>
+      </section>
+    
+    <!-- Javascript -->
+      <script src="./src/main.js"></script>
   </body>
 </html>

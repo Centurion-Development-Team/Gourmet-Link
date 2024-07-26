@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/login-signup-style.css">
+    <title>Login</title>
+    <script src="/src/script/ente.js" defer></script>
 </head>
 <body>
-    <img width="96" height="96" src="https://img.icons8.com/forma-regular-filled/48/FFFFFF/back.png" alt="back"/>
-    <img class="database" width="96" height="96" src="https://img.icons8.com/forma-regular-filled/96/4D4D4D/data-configuration.png" alt="data-configuration"/>
+    <a href="index.html"> 
+        <img class="back-button" src="https://img.icons8.com/forma-regular-filled/45/FFFFFF/back.png" alt="back"/>
+    </a>
+    <a href="admin-login.html">
+        <img class="admin-icon" src="https://img.icons8.com/fluency-systems-filled/48/737373/system-administrator-male.png" alt="admin"/>
+    </a>
     <div class="container">
         <div class="flex-right">
             <input type="text" class="email" placeholder="Email or Username" required>
             <div class="pass-container">
-                    <input type="password" class="pass" placeholder="Password" required>
+                <input type="password" class="pass" placeholder="Password" required>
             </div>
             <div class="account-actions">
-                <span class="create">Create Account</span>
+                <a href="signup.html">
+                    <span class="create">Create Account</span>
+                </a>
                 <button class="sign-button">Sign in</button>
             </div>
         </div> 
