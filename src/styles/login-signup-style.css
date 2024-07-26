@@ -1,13 +1,13 @@
-body{
+body {
     background-color: #000000;
 }
 
-.database{
+.database {
     position: absolute;
     left: 1800px;
 }
 
-.container{
+.container {
     position: absolute;
     width: 78vw;
     height: 62vh;
@@ -25,8 +25,7 @@ body{
     box-sizing: border-box;
 }
 
-/*signup*/
-.signup-container{
+.signup-container {
     position: absolute;
     width: 78vw;
     height: 76vh;
@@ -44,21 +43,21 @@ body{
     box-sizing: border-box;
 }
 
-.title-header{
+.title-header {
     width: 50%;
     height: 100%;
 }
 
-.flex-right{
+.flex-right {
     width: 50%;
     height: 100%;
     padding: 80px;
 }
 
-.title{
+.title {
     position: absolute;
     top: 30px;
-    left: 40px;/*20*/
+    left: 40px;
     display: flex;
     align-items: flex-start;
     font-family: 'Chillax', sans-serif;
@@ -67,15 +66,15 @@ body{
     line-height: calc(62vh * 0.198);
 }
 
-.letter-g{
+.letter-g {
     color: #ed1145;
 }
 
-.letter-l{
+.letter-l {
     color: #ffffff;
 }
 
-.header{
+.header {
     position: absolute;
     top: 170px;
     left: 70px;
@@ -83,14 +82,14 @@ body{
     height: calc(62vh * 0.09587);
     color: white;
     font-family: 'General Sans', sans-serif;
-    font-size:  calc(62vh * 0.0708);
+    font-size: calc(62vh * 0.0708);
     font-weight: calc(78vw * 0.266);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sign-header{
+.sign-header {
     position: absolute;
     top: 150px;
     left: 20px;
@@ -98,15 +97,14 @@ body{
     height: calc(62vh * 0.09587);
     color: white;
     font-family: 'General Sans', sans-serif;
-    font-size:  calc(62vh * 0.0708);
+    font-size: calc(62vh * 0.0708);
     font-weight: calc(78vw * 0.266);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*signup*/
-.continue{
+.continue {
     position: absolute;
     top: 55px;
     left: 60px;
@@ -119,9 +117,7 @@ body{
     display: flex;
 }
 
-
-/*signup*/
-.username{
+.username {
     width: calc(78vw * 0.5046);
     height: calc(62vh * 0.15929);
     background-color: #1e1e1e;
@@ -134,25 +130,11 @@ body{
     font-size: calc(62vh * 0.15929 * 0.4157);
 }
 
-.pass-container, .confirm-pass{
+.pass-container, .confirm-pass {
     position: relative;
 }
 
-.pass, .email{
-    width: calc(78vw * 0.5046);
-    height: calc(62vh * 0.15929);
-    background-color: #1e1e1e;
-    border: 2.5px solid #DFB150;
-    color: #DCDCDC;
-    padding: 10px;/*10*/
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-size: calc(62vh * 0.15929 * 0.4157);
-}
-
-/*signup*/
-.confirm{
+.pass, .email {
     width: calc(78vw * 0.5046);
     height: calc(62vh * 0.15929);
     background-color: #1e1e1e;
@@ -165,7 +147,20 @@ body{
     font-size: calc(62vh * 0.15929 * 0.4157);
 }
 
-.sign-button{
+.confirm {
+    width: calc(78vw * 0.5046);
+    height: calc(62vh * 0.15929);
+    background-color: #1e1e1e;
+    border: 2.5px solid #DFB150;
+    color: #DCDCDC;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: calc(62vh * 0.15929 * 0.4157);
+}
+
+.sign-button {
     background-color: #ED1145;
     border-radius: 60px;
     width: calc(78vw * 0.174);
@@ -183,32 +178,42 @@ body{
     margin-bottom: 20px;
 }
 
-.create{
-    background-color: transparent;
+.create {
+    background-color: #2a2d2e; /* Changed to match sign-in button color */
+    border-radius: 50px;
     font-family: 'General Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 32px;
+    color: #FFFFFF;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);;
+    padding: 10px 20px; /* Adjusted padding for better button appearance */
     margin-right: 10px;
-    display: flex;
-    align-items: center;
-    padding-right: 30px;
-    justify-content: center;
+    cursor: pointer;
+    white-space: nowrap; /* Ensures text stays on one line */
 }
 
-/*signup*/
-.exist{
-    background-color: transparent;
+.create:hover {
+    background-color: #e1003d; /* Darker shade on hover */
+}
+
+.exist {
+    background-color: #2a2d2e; /* Changed to match sign-up button color */
+    border-radius: 60px;
     font-family: 'General Sans', sans-serif;
     font-weight: 600;
     font-size: 32px;
+    color: #FFFFFF;
     text-align: center;
-    padding-right: 30px;
-    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px; /* Added padding for better button appearance */
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.footer{
+.exist:hover {
+    background-color: #e1003d; /* Darker shade on hover */
+}
+
+.footer {
     width: 100%;
     height: 56px;
     font-family: 'General Sans', sans-serif;
@@ -221,10 +226,22 @@ body{
     bottom: 0;
 }
 
-.footer p{
+.footer p {
     margin: 0;
 }
 
+.back-button {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
 
-
-
+.admin-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
