@@ -85,6 +85,10 @@
         overflow: hidden;
     }
 
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
     section {
         display: flex;
         flex-direction: column;
@@ -98,7 +102,7 @@
     .container {
         display: flex;
         position: relative;
-        border: 1px solid limegreen;
+        /* border: 1px solid limegreen; */
     }
 
     .main-content {
@@ -181,6 +185,28 @@
             font-size: var(--font-sizes-sm);
             font-weight: 400; 
             color: var(--clr-gld);
+        }
+
+    /* Footer */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            font-family: var(--font-General-Sans);
+            font-size: var(--font-sizes-xs);
+            font-weight: 400; 
+            color: var(--clr-wht);
+            background-color: var(--clr-dkgray);
+            border-radius: var(--size-2) var(--size-2) 0px 0px;
+            margin-top: var(--size-2);
+            scrollbar-width: none; 
+            overflow: hidden;
+        }
+        
+        .footer::-webkit-scrollbar {
+            display: none;
         }
 
     /* Dimension Constraints */

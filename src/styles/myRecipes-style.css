@@ -1,62 +1,328 @@
+.mr-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
 .left {
     background: var(--clr-dkgray);
     width: 365px;
-    height: 380px;
+    height: 516px;
     border-radius: 20px;
     margin-top: var(--size-13); 
     margin-left: var(--gap-lg);
     margin-bottom: var(--gap-base);
     padding: var(--gap-xl);
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+}
+
+.right {
+    /* background: limegreen; */
+    width: 1050px;
+    height: 554px;
+    /* border-radius: 20px; */
+    margin-top: var(--size-13); 
+    margin-left: var(--gap-base);
+    margin-bottom: var(--gap-base);
+    /* padding: var(--gap-xl); */
+    display: flex;
+    justify-content: flex-start;
+    top: 0px;
+    right: 0px;
 }
 
 hr {
     border: 1px solid #DFB150;
-    margin: 20px 0;
+    margin: 8px 8px 24px 8px;
 }
 
-.actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /* Actions */
+        .actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.actions__list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+        .actions__list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.actions-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 325px;
-    background: var(--clr-blk);
-    margin-bottom: var(--gap-lg);
-    padding: var(--gap-base) var(--gap-lg);
-    border-radius: var(--gap-base);
-}
+        .actions-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 325px;
+            background: var(--clr-blk);
+            margin-bottom: var(--gap-lg);
+            padding: var(--gap-xs) var(--gap-lg);
+            border-radius: var(--gap-base);
+        }
 
-.actions-item label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-family: var(--font-General-Sans);
-    font-weight: 600;
-    font-size: var(--font-sizes-sm);
-    color: var(--clr-wht);
-    padding: var(--gap-base) var(--gap-base) var(--gap-base) var(--gap-base);
-}
+        .actions-item a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-family: var(--font-General-Sans);
+            font-weight: 600;
+            font-size: var(--font-sizes-sm);
+            color: var(--clr-wht);
+            padding: var(--gap-base) var(--gap-base) var(--gap-base) var(--gap-base);
+        }
 
-.actions__text {
-    flex-grow: 1;
-}
+        .actions__text {
+            flex-grow: 1;
+        }
 
-.actions-item > label > img {
-    width: var(--gap-xl);
-    height: var(--gap-xl);
-    appearance: none;
-    position: relative;
-    cursor: pointer;
-}
+        .actions-item > a > img {
+            width: var(--gap-xl);
+            height: var(--gap-xl);
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+    /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabs__list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tabs-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 325px;
+            background: var(--clr-blk);
+            margin-bottom: var(--gap-lg);
+            padding: var(--gap-xs) var(--gap-lg);
+            border-radius: var(--gap-base);
+        }
+
+        .tabs-item a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-family: var(--font-General-Sans);
+            font-weight: 600;
+            font-size: var(--font-sizes-sm);
+            color: var(--clr-wht);
+            padding: var(--gap-base) var(--gap-base) var(--gap-base) var(--gap-base);
+        }
+
+        .tabs__text {
+            flex-grow: 1;
+        }
+
+        .tabs-item > a > img {
+            width: var(--gap-xl);
+            height: var(--gap-xl);
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+    /* Chopping Board */
+        /* Search Bar */
+            .searchbar{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                left: 16px;
+                width: 1024px;
+                height: 80px;
+                /* padding-right: 38px; */
+            }
+
+            .searchbar__form {
+                width: 100%;
+                height: 100%;
+                border-radius: var(--gap-xl);
+                position: relative;
+                margin-bottom: var(--gap-base);
+                background: grey;
+            }
+
+            .searchbar__input {
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: 20px;
+                border: none;
+                font-family: var(--font-General-Sans);
+                font-size: var(--font-sizes-sm);
+                font-weight: 400;
+                color: var(--clr-wht);
+                background-color: var(--clr-dkgray);
+                padding-left: 38px;
+            }
+
+            .searchbar__input::placeholder {
+                color: var(--clr-ltgray);
+            }
+
+            .searchbar__btn {
+                position: absolute;
+                top: 20%;
+                right: 32px;
+                width: 48px;
+                height: 48px;
+                background: none;
+                border: none;
+            }
+
+        /* Folders */
+            .folders {
+                margin-left: 16px;
+                display: flex;
+                flex-direction: column;
+                width: 1024px;
+            }
+            
+            .f-title{
+                font-family: var(--font-General-Sans);
+                font-size: var(--font-sizes-sm);
+                font-weight: 600; 
+                color: var(--clr-gld);
+            }
+
+            .f-carousel {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 35.25%;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                margin-left: 16px;
+                height: 110px;
+                width: 2000px;
+                overflow-y: hidden;
+            }
+
+            /* For WebKit browsers */
+                .f-carousel::-webkit-scrollbar {
+                    height: 12px; /* Adjust scrollbar height */
+                }
+
+                .f-carousel::-webkit-scrollbar-track {
+                    background: black; /* Track background color */
+                }
+
+                .f-carousel::-webkit-scrollbar-thumb {
+                    background-color: var(--clr-ltgray); /* Thumb color */
+                    border-radius: 10px; /* Rounded corners */
+                    border: 3px solid black; /* Space around the thumb */
+                }
+
+            /* For Firefox */
+                .f-carousel {
+                    scrollbar-color: var(--clr-ltgray) black; /* Thumb color and track color */
+                    scrollbar-width: thin; /* Make scrollbar thin */
+                }
+
+            .card {
+                padding: 0 0 var(--gap-lg) var(--gap-lg);
+                aspect-ratio: 544 / 104;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: var(--clr-dkgray);
+                margin: 20px;
+                border-radius: 20px;
+            }
+
+            .card > a {
+                font-family: var(--font-General-Sans);
+                font-size: var(--font-sizes-sm);
+                font-weight: 600;
+                color: var(--clr-wht);
+            }
+
+            .snaps-inline {
+                scroll-snap-type: inline mandatory;
+            }
+
+            .snaps-inline > * {
+                scroll-snap-align: start;
+            }
+
+        /* Recent */
+            .recent {
+                margin-left: 16px;
+                display: flex;
+                flex-direction: column;
+                width: 1024px;
+            }
+
+            .r-title{
+                font-family: var(--font-General-Sans);
+                font-size: var(--font-sizes-sm);
+                font-weight: 600; 
+                color: var(--clr-gld);
+                margin: 8px 0px 8px 0px;
+            }
+        
+            .r-carousel {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 20.75%;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                /* margin-left: 8px; */
+                width: 2000px;
+                gap: 0;
+            }
+
+            .r-carousel::-webkit-scrollbar {
+                height: 12px; /* Adjust scrollbar height */
+            }
+
+            .r-carousel::-webkit-scrollbar-track {
+                background: black; /* Track background color */
+            }
+
+            .r-carousel::-webkit-scrollbar-thumb {
+                background-color: var(--clr-ltgray); /* Thumb color */
+                border-radius: 10px; /* Rounded corners */
+                border: 3px solid black; /* Space around the thumb */
+            }
+
+            .r-carousel {
+                scrollbar-color: var(--clr-ltgray) black; /* Thumb color and track color */
+                scrollbar-width: thin; /* Make scrollbar thin */
+            }
+
+            .r-card {
+                padding: 0 0 0 var(--gap-lg);
+            }
+
+            .r-carousel__img {
+                inline-size: 100%;
+                aspect-ratio: 544 / 818;
+                border-radius: var(--gap-lg);
+                object-fit: cover;
+                margin: 0;
+            }
+
+            .snaps-inline{
+                scroll-snap-type: inline mandatory;
+            }
+            
+            .snaps-inline > * {
+                scroll-snap-align: start;
+            }

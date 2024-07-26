@@ -160,13 +160,28 @@
             grid-auto-columns: 35.25%;
             overflow-x: auto;
             scroll-behavior: smooth;
-            scrollbar-width: none; 
             -webkit-overflow-scrolling: touch;
             margin-left: 8px;
+            width: 2000px;
         }
 
         .carousel::-webkit-scrollbar {
-            display: none;
+            height: 12px; /* Adjust scrollbar height */
+        }
+
+        .carousel::-webkit-scrollbar-track {
+            background: black; /* Track background color */
+        }
+
+        .carousel::-webkit-scrollbar-thumb {
+            background-color: var(--clr-ltgray); /* Thumb color */
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid black; /* Space around the thumb */
+        }
+
+        .carousel {
+            scrollbar-color: var(--clr-ltgray) black; /* Thumb color and track color */
+            scrollbar-width: thin; /* Make scrollbar thin */
         }
 
         .card {
@@ -186,23 +201,4 @@
         
         .snaps-inline > * {
             scroll-snap-align: start;
-        }
-
-    /* Footer */
-        .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            position: absolute;
-            font-family: var(--font-General-Sans);
-            font-size: var(--font-sizes-xs);
-            font-weight: 400; 
-            color: var(--clr-wht);
-            background-color: var(--clr-dkgray);
-            border-radius: var(--size-2) var(--size-2) 0px 0px;
-            margin-top: var(--size-2);
-        }
-        ::-webkit-scrollbar {
-            display: none;
         }

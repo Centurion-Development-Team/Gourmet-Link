@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/profile-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="ppScript.js" defer></script>
+    <title>Gourmet Link Profile Page</title>
+</head>
+<body>
+    <a href="../index.html" class="icon-button">
+        <img width="48" height="48" src="../src/png/icons8-back-48.png" alt="back"/>
+    </a>
+ 
+    <div class="main-content">
+        <div class="left-half">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-picture">
+                    <a href="#" class="profile-add-button"></a>
+                    <img src="../src/png/icons8-add-96.png" alt="Profile Picture" class="profile-icon"/>
+                </div>
+                <div class="profile-info">
+                    <div class="username">Username</div>
+                    <div class="usertag">@usernametag</div>
+                </div>
+            </div>
+ 
+            <!-- Stat Section -->
+            <div class="container1">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-label">Favorites</div>
+                        <div class="stat-number">000</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Followers</div>
+                        <div class="stat-number">000</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Following</div>
+                        <div class="stat-number">000</div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- More Option Button -->
+            <div class="more-options-container">
+                <a href="javascript:void(0);" class="more-options-button" id="moreOptionsBtn">More Options...</a>
+                <div id="options" class="options-hidden">
+                    <a href="logout.html" class="option-button">Log Out</a>
+                    <a href="delete.html" class="option-button">Delete Account</a>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="right-half">
+            <!-- Info -->
+            <div class="container2">
+                <div class="details">
+                    <div class="title">
+                        <span class="title-g">G</span><span class="title-l">.L</span>
+                    </div>
+                    <div class="heading-container">
+                        <div class="heading">Bio</div>
+                        <a href="#" class="icon-button1">
+                            <img width="24" height="24" src="../src/png/icons8-pencil-48.png" alt="edit"/>
+                        </a>
+                    </div>
+                    <div class="bio-text">
+                        Lorem ipsum dolor sit amet consectetur. Nulla est tellus enim ornare dapibus. Ultrices eget enim sed amet et fusce ut vivamus nunc. Non egestas pellentesque odio vulputate fermentum senectus amet. Augue viverra amet et sem id. Lorem ipsum dolor sit amet consectetur. Nulla est tellus enim ornare dapibus. Ultrices eget enim sed amet et fusce ut vivamus nunc. Non egestas pellentesque odio vulputate fermentum senectus amet. Augue viverra amet et sem id.
+                    </div>
+                    <div class="heading">Preferences</div>
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #FF6384;"></div>
+                            Legend 1
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #36A2EB;"></div>
+                            Legend 2
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #FFCE56;"></div>
+                            Legend 3
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #4BC0C0;"></div>
+                            Legend 4
+                        </div>
+                    </div>
+                    <div class="update-date">Last updated on XX/XX/XX</div>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+ 
+    <div class="footer-container">
+        <p>All Rights Reserved © Gourmet Link 2024</p>
+    </div>
+</body>
+</html>
