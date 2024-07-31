@@ -1,0 +1,378 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+span {
+    color: red;
+    padding: 15px;
+}
+
+.userprofile {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 25px;
+    color: #DFB150;
+    font-size: 24px;
+}
+
+.userprofile img{
+    margin-left: 40px;
+}
+
+
+.container{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+    padding: 25px;
+    padding-left: 2px;
+    top: 32px;
+    left: 31px;
+    border-radius: 20px;
+    width: 544px;
+    height: 1016px;
+}
+
+.accountpass-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    height: 104px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.password{
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    height: 104px;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.account a, .password a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:  36px;
+    font-weight: 600;
+    color: white;
+    width: 80%;
+}
+
+.divider-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 52px;
+    width: 368px;
+    height: 1px;
+    border: 4px;
+    background-color: #DFB150;
+}
+
+
+.useraction-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+
+.user-activity, .user-recipe, .recipe-ingredient, .difficulty-frequency, .quantity-category{
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    height: 104px;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.user-activity a, .user-recipe a, .recipe-ingredient a, .difficulty-frequency a, .quantity-category a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:  36px;
+    font-weight: 600;
+    color: white;
+    width: 80%;
+}
+
+.dropdown-container {
+    display: flex;
+    width: 634px;
+    height: 80px;
+    top: 120px;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    left: 910px;
+    position: absolute;
+    color: white;
+}
+
+.Dropdown {
+    position: relative;
+    width: 634px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+}
+
+.Dropdown button {
+    width: calc(95% - 48px); /* Adjust width to accommodate image 48px*/
+    font-size: 24px;
+    border: none;
+    background-color: transparent; /* Make background transparent to show Dropdown background */
+    color: white;
+    text-align: left;
+    font-size: 36px;
+    padding: 30px; /* Remove padding to align text properly */
+    margin-right: 10px; /* Space between text and image */
+    cursor: pointer;
+}
+
+.Dropdown img {
+    cursor: pointer;
+    transform: rotate(90deg);
+    filter: invert(100%);
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    overflow: auto;
+    font-size: 24px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    background-color: #1E1E1E;
+    z-index: 1;
+}
+
+.Dropdown:hover .Dropdown-content {
+    display: block;
+}
+
+.Dropdown-content a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.Dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.search-container {
+    width: 634px;
+    height: 825px;
+    background-color: #1E1E1E; /* Adjust background color as needed */
+    position: absolute;
+    top: 223px; /* Adjust this value to position below the dropdown */
+    left: 910px; /* Adjust this value to position next to the container */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.searchbar {
+    width: 570px;
+    height: 104px;
+    background-color: black; /* Adjust background color as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between searchbar and account-table */
+    border-radius: 20px;
+}
+
+.searchbar input {
+    width: 70%;
+    height: 60%; /* Adjust the height as needed */
+    padding: 10px;
+    font-size: 36px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.account-table {
+    width: 570px;
+    height: 641px;
+    background-color: black; /* Adjust background color as needed */
+    border-radius: 20px;
+    border-spacing: 10px 0; /* Add vertical spacing */
+}
+
+.account-table table {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: separate; /* Ensure border-spacing works */
+}
+
+.account-table td, th {
+    color: #FFFFFF; 
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    border: 10px solid transparent; /* Ensure the space is visible */
+}
+
+.account-table tr:first-child td, 
+.account-table tr:first-child th {
+    padding-top: 10px; /* Add 1px space at the top */
+}
+
+.userinfo-container{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 1%;
+    top: 120px;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+    padding: 42px;
+    width: 634px;
+    height: 925px;
+    border-radius: 20px;
+    color: white;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+.profile p{
+    margin-top: 0px;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+.profile span{
+    color: #DFB150;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.log{
+    margin-top: -10px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #8F0C35;
+    margin-bottom: 0;
+}
+
+.log-records {
+    width: 100%;
+    height: 625px;
+    background-color: black; /* Adjust background color as needed */
+    border-radius: 20px;
+    border-spacing: 10px 0; /* Add vertical spacing */
+}
+
+.log-records table {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: separate; /* Ensure border-spacing works */
+}
+
+.log-records td, th {
+    color: #FFFFFF; 
+    font-size: 24px;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    border: 10px solid transparent; /* Ensure the space is visible */
+}
+
+.log-records tr:first-child td, 
+.log-records tr:first-child th {
+    padding-top: 10px; /* Add 1px space at the top */
+}
+
+.flag-delete-buttons{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.flag-delete-buttons button{
+    font-size: 36px;
+    font-family: sans-serif;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 273px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+}
+
+.flag {
+    background-color: #8F0C35;
+}
+
+.delete {
+    background-color: #500118;
+}
