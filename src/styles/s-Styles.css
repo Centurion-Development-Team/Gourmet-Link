@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.icon-button {
+    position: absolute;
+    width: calc(62vh * 0.0708);
+    height: calc(62vh * 0.0708);
+    top: calc(62vh * 0.0708);
+    left: calc(78vw * 0.03191);
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+    padding: 10px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #DFB150;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1, h3{
+    font-family: 'Chillax', sans-serif;
+    font-weight: 600;
+}
+
+span{
+    font-weight: 500;
+    font-family: 'Chillax', sans-serif;
+}
+
+.toggle-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toggle{
+    width: 60px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #ED1145;
+    display: inline-block;
+}
+
+.toggle-c{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: 300ms all;
+    border: 1px solid #e8df42;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + div .toggle-c{
+    left: 30px;
+    background-color: white;
+    border-color: #DFB150;
+}
+
+input[type="radio"]{
+    border: 0px;
+    width: 10%;
+    height: 20px;
+    accent-color: black;
+}
+
+.togg-label{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    gap: 5px;
+}
+
+.bottom{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bottom:hover{
+    text-decoration: underline;
+}
+
+label, input[type="radio"]{
+    cursor: pointer;
+}

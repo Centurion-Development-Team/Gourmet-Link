@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/profile-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/script/ppScript.js" defer></script>
+    <title>Gourmet Link Profile Page</title>
+</head>
+<body>
+    <a href="../index.html" class="icon-button">
+        <img width="48" height="48" src="https://img.icons8.com/forma-regular-filled/45/FFFFFF/back.png" alt="back"/>
+    </a>
+ 
+    <div class="main-content">
+        <div class="left-half">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-picture">
+                    <a href="#" class="profile-add-button"></a>
+                    <img src="../src/png/handsome.png" alt="Profile Picture" class="profile-icon"/>
+                </div>
+                <div class="profile-info">
+                    <div class="username">JHONNY</div>
+                    <div class="usertag">@jonnny-G002</div>
+                </div>
+            </div>
+ 
+            <!-- Stat Section -->
+            <div class="container1">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-label">Favorites</div>
+                        <div class="stat-number">10</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Followers</div>
+                        <div class="stat-number">15</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Following</div>
+                        <div class="stat-number">05</div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- More Option Button -->
+            <div class="more-options-container">
+                <a href="javascript:void(0);" class="more-options-button" id="moreOptionsBtn">More Options...</a>
+                <div id="options" class="options-hidden">
+                    <a href="#" class="option-button">Log Out</a>
+                    <a href="#" class="option-button">Delete Account</a>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="right-half">
+            <!-- Info -->
+            <div class="container2">
+                <div class="details">
+                    <div class="title">
+                        <span class="title-g">G</span><span class="title-l">.L</span>
+                    </div>
+                    <div class="heading-container">
+                        <div class="heading">Bio</div>
+                    </div>
+                    <div class="bio-text">
+                        As a passionate food lover and blogger, I explore diverse culinary landscapes, sharing my gastronomic adventures and recipes with fellow enthusiasts. My blog delves into everything from street food delights to gourmet experiences, offering readers a flavorful journey through my lens. Driven by a love for cooking and tasting, I aim to inspire others to appreciate and experiment with the art of food.
+                    </div>
+                    <div class="heading">Preferences</div>
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #FF6384;"></div>
+                            Italian Cuisine
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #36A2EB;"></div>
+                            Japanese Cuisine
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #FFCE56;"></div>
+                            Mexican Cuisine
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #4BC0C0;"></div>
+                            Indian Cuisine
+                        </div>
+                    </div>
+                    <div class="update-date">Last updated on 06/08/2024</div>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+ 
+    <div class="footer-container">
+        <p>All Rights Reserved © Gourmet Link 2024</p>
+    </div>
+</body>
+</html>

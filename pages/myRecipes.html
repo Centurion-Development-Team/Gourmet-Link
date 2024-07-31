@@ -1,0 +1,272 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=chillax@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../src/styles/util.css">
+        <link rel="stylesheet" type="text/css" href="../src/styles/myRecipes-style.css">
+        <title>My Recipes</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <script lang="javascript" type="text/javascript" defer src="../src/main.js"></script>
+    </head>
+    <body>
+        
+    <!-- Side Menu -->
+    <section>
+        <div class="sidemenu container">
+          <div class="toggle-close" id="close"><a href="#"><img src="../src/png/icons8-close-96.png" alt="Close Menu"></a></div>
+          <ul class="sidemenu__ul">
+            <li>
+              <a class="sidemenu__items" href="../index.html">
+                <img class="png" src="../src/png/icons8-home-96.png" alt="Home"/>Dashboard</a></li>
+            <li>
+              <a class="sidemenu__items" href="./pages/myRecipes.html">
+                <img class="png" src="../src/png/icons8-pen-96.png" alt="My Recipes"/>My Recipes</a></li>
+            <li>
+              <a class="sidemenu__items" href="#">
+                <img class="png" src="../src/png/icons8-heart-96.png" alt="My Favorites"/>My Favorites</a></li>
+            <li>
+              <a class="sidemenu__items" href="#">
+                <img class="png" src="../src/png/icons8-chat-96.png" alt="My Ratings"/>My Ratings</a></li>
+            <li>
+              <a class="sidemenu__items" href="#">
+                <img class="png" src="../src/png/icons8-settings-96.png" alt="Settings"/>Settings</a></li>
+          </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
+      </section>
+    
+    <!-- Top Bar -->
+      <section>
+        <div class="topbar container">
+              <div onclick="showSidemenu()" class="toggle-open" id="open">
+                <a class="topbar__item" href="#"><img src="../src/png/icons8-open-96.png" alt="Open Menu"></a></div>
+              <div class="logo">
+                <h1>
+                  <a class="topbar__logo-red" href="#">Gourmet </a>
+                  <a class="topbar__logo-wht" href="#">Link</a></h1></div>
+              <div>
+                <a class="topbar__items" href="#"><p>Sign in</p><img class="png" src="../src/png/icons8-user-96.png" alt="Settings"/></a></div>
+        </div>
+      </section>
+
+    <!-- Main Content -->
+      <section class="mr-main-content">
+        <!-- Actions & Tabs -->
+        <section class="left">
+          <div class="actions container">
+            <ul class="actions__list">
+            <!-- New Recipe File -->
+              <li class="actions-item">
+                <a href="./myRecipes/newRecipeFile.html">
+                  <span>New Recipe File</span>
+                  <img src="../src/png/icons8-add-96.png" alt="Add">
+                </a>
+              </li>
+
+            <!-- New Folder -->
+              <li class="actions-item">
+                <a href="#">
+                  <span>New Folder</span>
+                  <img src="../src/png/icons8-new-folder-96.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        <!-- Horizontal Bar -->
+          <hr>
+          
+          <div class="tabs container">
+          <!-- Tabs -->
+            <ul class="tabs__list">
+              <!-- Ingredients List -->
+                <li class="tabs-item">
+                  <a href="#">
+                    <span>Ingredients List</span>
+                    <img src="../src/png/icons8-ingredients-96.png" alt="">
+                  </a>
+                </li>
+
+              <!-- Reviews -->
+                <li class="tabs-item">
+                  <a href="#">
+                    <span>Reviews</span>
+                    <img src="../src/png/icons8-rating-96.png" alt="">
+                  </a>
+                </li>
+
+              <!-- Drafts -->
+                <li class="tabs-item">
+                  <a href="#">
+                    <span>Drafts</span>
+                    <img src="../src/png/icons8-edit-file-96.png" alt="">
+                  </a>
+                </li>
+
+              <!-- Trash -->
+                <li class="tabs-item">
+                  <a href="#">
+                    <span>Trash</span>
+                    <img src="../src/png/icons8-trash-96.png" alt="">
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </section>
+
+      <!-- Chopping Board -->
+        <section class="right">
+            <!-- Search -->
+                <section>
+                  <div class="searchbar container">
+                    <form class="searchbar__form">
+                      <input class="searchbar__input" type="text" name="" placeholder="Search...">
+                      <button class="searchbar__btn" type="submit">
+                        <img src="../src/png/icons8-search-96.png" alt=""></button>
+                    </form>
+                  </div>
+                </section>
+
+            <!-- Folders -->
+                <section>
+                  <div class="folders container">
+                    <span class="f-title container">Folders</span>
+                    <div class="f-carousel container snaps-inline">
+                      <div class="card">
+                        <a href="#">Folder 1</a>
+                      </div>
+                      <div class="card">
+                        <a href="#">Folder 2</a>
+                      </div>
+                      <div class="card">
+                        <a href="#">Folder 3</a>
+                      </div>
+                      <div class="card">
+                        <a href="#">Folder 4</a>
+                      </div>
+                      <div class="card">
+                        <a href="#">Folder 5</a>
+                      </div>
+                      <div class="card">
+                        <a href="#">Folder 6</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+            <!-- Recent -->
+                <section>
+                  <div class="recent container">
+                    <span class="r-title container">Recent</span>
+                    <div class="r-carousel container snaps-inline">
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-1.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-6.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-3.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-2.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-4.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-5.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-1.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-6.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-3.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-2.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-4.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                      <div class="r-card">
+                        <div>
+                          <img class="r-carousel__img" src="../src/png/cards-544-5.png" alt="Image">
+                          <div class="card-text"></div>
+                          <div class="exit-icon"><img src="" alt=""></div>
+                        </div>
+                        <div class="card-text-expand"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+        </section>
+      </section>
+
+    <!-- Footer -->
+        <section>
+          <div class="footer container">
+            <p>All Rights Reserved © Gourmet Link 2024</p>
+          </div>
+        </section>
+    </body>
+</html>

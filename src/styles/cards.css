@@ -1,0 +1,70 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: var(--font-General-Sans);
+}
+
+.icon-button {
+    display: block;
+    margin: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main-image {
+    height: calc(100vh - 160px); /* Adjust based on the actual header and footer height */
+    object-fit: cover;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border: 8px solid #ED1145;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-left {
+    font-size: 45px;
+}
+
+.info-right {
+    font-size: 30px;
+}
+
+.info-categories {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info-ingredients, .info-steps {
+    margin-bottom: 20px;
+}
+
+.info-ingredients h3, .info-steps h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

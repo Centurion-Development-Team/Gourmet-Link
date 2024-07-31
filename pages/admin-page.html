@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="/src/styles/admin-p.css">
+    <script src="/src/script/admin-p.js" defer></script>
+</head>
+<body>
+
+    <a href="login.html" class="icon-button">
+        <img width="30" height="30" src="https://img.icons8.com/forma-regular-filled/45/FFFFFF/back.png" alt="back"/>
+    </a>
+    
+    <div class="header">
+        <span class="text gourmet">Gourmet</span>
+        <span class="text link">Link</span>
+        
+    </div>
+
+    <div class="admin-info">
+        <div class="admin-username"></div>
+        <img class="admin-icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/administrator-male--v1.png" alt="administrator-male--v1"/>
+    </div>    
+
+    <!-- Updated containers -->
+    <div class="container1">
+        <!-- Search Textbox -->
+        <div class="textbox">
+            <input type="text" id="search" placeholder="Search..." />
+            <img width="32" height="32" src="https://img.icons8.com/windows/32/737373/search-more.png" alt="search-more"/>
+        </div>
+
+
+        <!-- Divider Line -->
+        <div class="divider"></div>
+
+
+        
+        <!-- Sort Buttons -->
+        <button id="sortLatestLogin">Sort by Latest Login</button>
+        <button id="sortRecipeCreated">Sort by Recipe Created</button>
+        <button id="sortFollowers">Sort by Followers</button>
+        <button id="sortFlag">Sort by Flag</button>
+    </div>
+
+    <div class="container2">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Recipe Created</th>
+                    <th>Followers</th>
+                    <th>Flag</th>
+                    <th>Latest Login</th>
+                    <th>Account Created</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
