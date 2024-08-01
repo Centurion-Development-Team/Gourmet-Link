@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gourmet Link</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #000000;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #444;
+      color: white;
+      font-size: 16px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #444;
+      color: white;
+      font-size: 16px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    select::-ms-expand {
+      display: none;
+    }
+
+    .field {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .field > div {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .image-container {
+      border: 2px dashed #555;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      cursor: pointer;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .instructions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .instruction {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .instruction .number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #555;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .instruction input {
+      width: calc(100% - 40px);
+    }
+
+    button {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff2d2d;
+    }
+
+    .upload-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .container {
+        width: 100%;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .field {
+        flex-direction: column;
+      }
+
+      .field > div {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .instructions {
+        flex-direction: column;
+      }
+
+      .instruction input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">   
+    <h1>Gourmet Link</h1>
+    <div class="field">
+      <div>
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" placeholder="Enter recipe name">
+      </div>
+      <div>
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="">Select Category</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+          <option value="Dessert">Dessert</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <div>
+        <label for="prep-time">Prep Time:</label>
+        <input type="text" id="prep-time" placeholder="00:00:00" readonly>
+      </div>
+      <div>
+        <label for="servings">Servings:</label>
+        <input type="number" id="servings" value="0">
+      </div>
+      <div>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="">Select Difficulty</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="" alt="Recipe Image">
+      <p>Drop Your Images / GIFs Here!</p>
+    </div>
+
+    <label for="description">Description:</label>
+    <textarea id="description" placeholder="Enter recipe description"></textarea>
+
+    <div class="instructions">
+      <label for="instructions">Instructions:</label>
+      <div class="instruction">
+        <div class="number">1</div>
+        <input type="text" placeholder="Enter instruction 1">
+      </div>
+      <div class="instruction">
+        <div class="number">2</div>
+        <input type="text" placeholder="Enter instruction 2">
+      </div>
+      <div class="instruction">
+        <div class="number">3</div>
+        <input type="text" placeholder="Enter instruction 3">
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="ingredients">Ingredients:</label>
+      <div class="upload-container">
+        <input type="number" id="ingredients" value="0">
+        <select id="pieces">
+          <option value="">Pieces</option>
+        </select>
+        <button>+</button>
+      </div>
+    </div>
+
+    <button>UPLOAD</button>
+  </div>
+</body>
+</html>
