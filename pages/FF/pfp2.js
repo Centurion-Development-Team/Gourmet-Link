@@ -3,11 +3,11 @@ window.onload = function() {
     var pieChart = new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['Italian Cuisine', 'Japanese Cuisine', 'Indian Cuisine', 'Mexican Cuisine'],
+            labels: ['Gourmet Burgers', 'Sushi Rolls', 'Spaghetti Carbonara', 'BBQ Ribs'],
             datasets: [{
-                data: [20, 13, 39, 58],
-                backgroundColor: ['#ff6384', '#36a2eb', '#4BC0C0', '#ffce56'],
-                hoverBackgroundColor: ['#ff6384', '#36a2eb', '#4BC0C0', '#ffce56']
+                data: [40, 12, 35, 44],
+                backgroundColor: ['#25da62', '#18b8cd', '#d614d3', '#e09e11'],
+                hoverBackgroundColor: ['#25da62', '#18b8cd', '#d614d3', '#e09e11']
             }]
         },
         options: {

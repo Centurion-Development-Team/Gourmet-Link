@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 7</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+  
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +30,19 @@
 
     <div class="info-container">
       <div class="info-header">
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
         <div class="info-left">Mini Quiche</div>
-        <div class="info-right">Sally</div>
+
+        <a href="/pages/FF/pfp3.html" class="info-right">Sally</a>
       </div>
-      <div class="info-categories">#Bite-Sized Snacks #Brunch  #Desserts  #Party Food</div>
+      <div class="info-categories">Prep time: 1hr | Diffeculty: Hard | 4 Servings | #Lunch </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p> Easier and quicker than the full size version, my mini quiche uses a buttery flaky pie crust and a simple 4-5 ingredient egg filling. You can add a variety of flavors and add-ins like ham, bacon, spinach, Swiss cheese, scallions, mushrooms, peppers, and more. Bake these mini quiches in a mini muffin pan and watch them virtually disappear. I absolutely love quiche and this tiny version is even better!</p>
+      </div>
+     
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -55,5 +76,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

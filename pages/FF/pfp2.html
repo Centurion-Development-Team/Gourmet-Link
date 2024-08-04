@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/profile-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/pages/FF/pfp2.js" defer></script>
+    <title>Gourmet Link Profile Page</title>
+</head>
+<body>
+    <a href="/pages/profile.html" class="icon-button">
+        <img width="48" height="48" src="https://img.icons8.com/forma-regular-filled/45/FFFFFF/back.png" alt="back"/>
+    </a>
+
+    <div class="main-content">
+        <div class="left-half">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-picture">
+                    <a href="#" class="profile-add-button"></a>
+                    <img src="/src/png/pfp2.png" alt="Profile Picture" class="profile-icon"/>
+                </div>
+                <div class="profile-info">
+                    <div class="username">JULIAKIM</div>
+                    <div class="usertag">@charming</div>
+                </div>
+            </div>
+
+            <!-- Stat Section -->
+            <div class="container1">
+                <div class="stats">
+                    <div class="stat-label">Recipes</div>
+                </div>
+            </div>
+
+            <!-- More Option Button -->
+            <div class="more-options-container">
+             
+                <div id="options" class="options-hidden">
+                    <a href="/pages/login.html" class="option-button">Log Out</a>
+                    <!-- <a href="#" class="option-button">Delete Account</a> -->
+                </div>
+            </div>
+        </div>
+
+ 
+        <div class="right-half">
+            <!-- Info -->
+            <div class="container2">
+                <div class="details">
+                    <div class="title">
+                        <span class="title-g">G</span><span class="title-l">.L</span>
+                    </div>
+                    <div class="heading-container">
+                        <div class="heading">Bio</div>
+                    </div>
+                    <div class="bio-text">
+                        Hey! I’m a cook who’s as popular in the kitchen as I am in front of the camera. I’m all about whipping up delicious, crowd-pleasing dishes and charming everyone with my culinary skills. From classic comfort foods to trendy bites, I love creating meals that bring people together and leave a lasting impression.
+                    </div>
+                    <div class="heading">Preferences</div>
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #25da62;"></div>
+                            Gourmet Burgers 
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #18b8cd;"></div>
+                            Sushi Rolls
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #d614d3;"></div>
+                            Spaghetti Carbonara
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #e09e11;"></div>
+                            BBQ Ribs
+                        </div>
+                    </div>
+                    <div class="update-date">Last updated on 07/02/2024</div>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+ 
+    <div class="footer-container">
+        <p>All Rights Reserved © Gourmet Link 2024</p>
+    </div>
+</body>
+</html>

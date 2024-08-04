@@ -12,7 +12,7 @@
     <a href="../index.html" class="icon-button">
         <img width="48" height="48" src="https://img.icons8.com/forma-regular-filled/45/FFFFFF/back.png" alt="back"/>
     </a>
- 
+
     <div class="main-content">
         <div class="left-half">
             <!-- Profile Section -->
@@ -26,35 +26,35 @@
                     <div class="usertag">@jonnny-G002</div>
                 </div>
             </div>
- 
+
             <!-- Stat Section -->
             <div class="container1">
                 <div class="stats">
-                    <div class="stat">
+                    <a href="/fav.html" class="stat">
                         <div class="stat-label">Favorites</div>
-                        <div class="stat-number">10</div>
-                    </div>
-                    <div class="stat">
+                        <div class="stat-number">06</div>
+                    </a>
+                    <a href="/pages/FF/fng2.html" class="stat">
                         <div class="stat-label">Followers</div>
-                        <div class="stat-number">15</div>
-                    </div>
-                    <div class="stat">
+                        <div class="stat-number">17</div>
+                    </a>
+                    <a href="/pages/FF/fng1.html" class="stat">
                         <div class="stat-label">Following</div>
-                        <div class="stat-number">05</div>
-                    </div>
+                        <div class="stat-number">08</div>
+                    </a>
                 </div>
             </div>
- 
+
             <!-- More Option Button -->
             <div class="more-options-container">
                 <a href="javascript:void(0);" class="more-options-button" id="moreOptionsBtn">More Options...</a>
                 <div id="options" class="options-hidden">
-                    <a href="#" class="option-button">Log Out</a>
-                    <a href="#" class="option-button">Delete Account</a>
+                    <a href="/pages/login.html" class="option-button">Log Out</a>
+                  <!--<a href="#" class="option-button">Delete Account</a>>-->  
                 </div>
             </div>
         </div>
- 
+
         <div class="right-half">
             <!-- Info -->
             <div class="container2">
@@ -65,9 +65,9 @@
                     <div class="heading-container">
                         <div class="heading">Bio</div>
                     </div>
-                    <div class="bio-text">
+                    <textarea class="bio-text" id="bioTextarea">
                         As a passionate food lover and blogger, I explore diverse culinary landscapes, sharing my gastronomic adventures and recipes with fellow enthusiasts. My blog delves into everything from street food delights to gourmet experiences, offering readers a flavorful journey through my lens. Driven by a love for cooking and tasting, I aim to inspire others to appreciate and experiment with the art of food.
-                    </div>
+                    </textarea>
                     <div class="heading">Preferences</div>
                     <div class="chart-container">
                         <canvas id="pieChart"></canvas>
@@ -96,9 +96,24 @@
             <!-- End -->
         </div>
     </div>
- 
+
     <div class="footer-container">
         <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const bioTextarea = document.getElementById('bioTextarea');
+
+            // Load the saved bio from localStorage if it exists
+            if (localStorage.getItem('bioText')) {
+                bioTextarea.value = localStorage.getItem('bioText');
+            }
+
+            // Save the bio text to localStorage when it changes
+            bioTextarea.addEventListener('input', () => {
+                localStorage.setItem('bioText', bioTextarea.value);
+            });
+        });
+    </script>
 </body>
 </html>

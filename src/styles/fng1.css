@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.text.gourmet {
+    color: #ED1145;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text.link {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+}
+
+.topbar .icon-button img {
+    vertical-align: middle;
+}
+
+.topbar .logo h1 {
+    margin: 0;
+}
+
+.topbar__logo-red {
+    color: #ED1145;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.topbar__logo-wht {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.topbar__items {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.topbar__items p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td img {
+    cursor: pointer;
+}
+
+/* Add this section to ensure usernames have white color */
+td a {
+    color: #FFFFFF;
+    text-decoration: none; /* Remove underline */
+}
+
+td a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}

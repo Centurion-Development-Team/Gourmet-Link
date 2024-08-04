@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 19</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+  
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +30,19 @@
 
     <div class="info-container">
       <div class="info-header">
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+         
         <div class="info-left">Frozen Yogurt</div>
-        <div class="info-right">Jenn Segal</div>
+
+        <a href="/pages/FF/pfp3.html" class="info-right">Lord Maximus</a>
       </div>
-      <div class="info-categories">#Frozen Desserts #Simple Recipes</div>
+      <div class="info-categories">Prep time: 5 min | Diffeculty: Easy | 2 Servings | #Dessert </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p> This frozen yogurt recipe takes only 5 minutes of work, and you do not need an ice cream maker! Be sure to check out my tips for how to make frozen yogurt that is creamy and delicious.</p>
+      </div>
+    
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -54,5 +75,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
   <title>Card 1</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +30,20 @@
 
     <div class="info-container">
       <div class="info-header">
+
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+       
         <div class="info-left">Cookie Ice Cream Sandwiche</div>
-        <div class="info-right">Sally</div>
+        
+        <a href="/pages/FF/pfp3.html" class="info-right">Lord Maximus</a>
       </div>
-      <div class="info-categories">#Dessert #Ice Cream Treats</div>
+      <div class="info-categories">Prep time: 1 hr | Diffeculty: Medium | 3 Servings | #Dessert </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p>There’s nothing quite like a chocolate chip cookie, except for two chocolate chip cookies sandwiched together with ice cream. These cookie ice cream sandwiches use a quick no-chill cookie dough recipe that produces soft cookies perfect for freezing. I strongly recommend using mini chocolate chips, and be sure to freeze the assembled sandwiches for at least 3 hours prior to serving.</p>
+      </div>
+
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -55,11 +77,23 @@
     </div>
   </div>
 
+
   <!-- Footer -->
   <section>
     <div class="footer container">
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

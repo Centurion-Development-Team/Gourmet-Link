@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 11</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+  
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +30,19 @@
 
     <div class="info-container">
       <div class="info-header">
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
         <div class="info-left">Hummus</div>
-        <div class="info-right">Maria Lichty</div>
+
+        <a href="/pages/FF/pfp3.html" class="info-right">Maria Lichty</a>
       </div>
-      <div class="info-categories">#Vegetarian #Middle Eastern</div>
+      <div class="info-categories">Prep time: 35 min | Diffeculty: Easy | 7 Servings | #Dessert </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p> Hummus is a delicious spread (or dip) made from chickpeas, tahini, lemon, and spices. It is a popular dish in the Middle East and the Mediterranean. You can find it in most grocery stores, but trust me, you’ll want to skip those and make your own. Homemade hummus is just so much better!</p>
+      </div>
+    
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -57,5 +78,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

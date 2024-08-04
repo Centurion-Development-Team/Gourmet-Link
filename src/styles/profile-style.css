@@ -310,3 +310,47 @@ body {
         font-size: 12px;
     }
 }
+
+.stat {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.stat .stat-label,
+.stat .stat-number {
+    color: inherit; /* Inherit the white color from the parent */
+}
+
+/* Additional styling to make the stat sections look like buttons */
+.stat {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #500118; /* Example background color */
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.stat:hover {
+    background-color: #9c012e; /* Darken background on hover */
+}
+
+.bio-text {
+    width: 100%;
+    height: 150px;
+    background-color: #500118; /* Example background color */
+    color: white; /* Set text color to white */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: inherit; /* Ensure the font matches the rest of the page */
+    font-size: inherit; /* Ensure the font size matches the rest of the page */
+    resize: none; /* Disable resizing */
+}
+
+.bio-text:focus {
+    outline: none; /* Remove the default focus outline */
+    background-color: #760123; /* Slightly darker background on focus */
+}
+

@@ -4,7 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 1</title> <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+
+  <!--
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+-->
+
 </head>
 <body>
   <!-- Back Button -->
@@ -14,46 +28,76 @@
 
   <!-- Main Content -->
   <div class="main-content">
-    <img class="main-image" src="/src/png/c7.png" alt="Image">
+    <img class="main-image" src="/src/png/cards-544-1.png" alt="Image">
 
+    
     <div class="info-container">
+      <!--
       <div class="info-header">
-        <div class="info-left">Mini Quiche</div>
-        <div class="info-right">Sally</div>
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
+        <div class="info-left">Stuffed mushrooms</div>
+        
+        
+       <a href="/pages/FF/pfp3.html" class="info-right">Lisa Bryan</a>
+    </div>
+      
+      <div class="info-categories">Prep time: 06-10 min | Diffeculty: Medium | 5 Servings | #Dessert </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p> A crispy, savory mixture of panko bread crumbs, pine nuts, sun-dried tomatoes, herbs, and pecorino cheese fills juicy roasted mushroom caps. These bite-sized apps are easy to make and SO delicious.</p>
       </div>
-      <div class="info-categories">#Bite-Sized Snacks #Brunch  #Desserts  #Party Food</div>
+     -->
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
-        Pie Crust<br>
-        Heavy Cream and Milk<br>
-        Eggs<br>
-        Salt and Pepper<br>
-        Optional Add-ins: Ham, Bacon, Spinach, Swiss Cheese, Scallions, Mushrooms, Peppers
+          Cremini or white button mushrooms<br>
+          Extra-virgin olive oil (Spanish Hojiblanca preferred)<br>
+          Salt and black pepper<br>
+          Baby spinach<br>
+          Roasted red peppers (store-bought or homemade)<br>
+          Yellow onions<br>
+          Minced garlic cloves<br>
+          Italian seasoning (homemade or store-bought)<br>
+          Whole milk ricotta cheese<br>
+          Parmesan cheese<br>
+          Minced parsley (for garnish)
         </p>
-        
-
       </div>
+
       <div class="info-steps">
         <h3>Steps</h3>
         <p>
-        Step 1: Prepare pie dough and chill for 2 hours.<br>
-        Step 2: Make egg filling and chill.<br>
-        Step 3: Roll out dough, cut into small circles, and fit into mini muffin pan.<br>
-        Step 4: Fill each crust with egg filling and top with add-ins.<br>
-        Step 5: Bake until crust is browned.
+          Step 1: Preheat oven to 375°F.<br>
+          Step 2: Wash and de-stem mushrooms, reserving stems. Season caps with olive oil, salt, and pepper, then place hollow side up on a baking sheet.<br>
+          Step 3: In a skillet, heat olive oil and cook chopped mushroom stems, roasted red pepper, onion, garlic, and seasoning until softened. Add spinach and cook until wilted.<br>
+          Step 4: Transfer mixture to a bowl, stir in ricotta.<br>
+          Step 5: Stuff mushroom caps with filling, top with parmesan, and bake for 20 minutes. Broil for 2-3 minutes to crisp cheese. Garnish with parsley and serve.
         </p>
-        
-        
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
+
+  <!-- Footer --> 
+<!-- 
   <section>
     <div class="footer container">
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>
+-->

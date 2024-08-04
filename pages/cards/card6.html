@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 6</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +30,18 @@
 
     <div class="info-container">
       <div class="info-header">
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
         <div class="info-left">Cinnamon Rolls</div>
-        <div class="info-right">Charlotte Linlin</div>
+        <a href="/pages/FF/pfp3.html" class="info-right">Lord Maximus</a>
       </div>
-      <div class="info-categories">#Baked Goods  #Comfort Food  #Desserts  #Holiday Treats</div>
+      <div class="info-categories">Prep time: 30 min | Diffeculty: Medium | 4 Servings | #Dessert </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p>These easy cinnamon rolls are perfect for yeast beginners because they only require 1 rise. You have a few options for toppings. The recipe below includes a simple cream cheese icing, but we also love these with the coffee icing or vanilla icing that’s included in the recipe Notes below.</p>
+      </div>
+
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -57,5 +77,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

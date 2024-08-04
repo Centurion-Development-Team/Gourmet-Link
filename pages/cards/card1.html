@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
   <title>Card 1</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+
+
 </head>
 <body>
   <!-- Back Button -->
@@ -18,37 +31,48 @@
 
     <div class="info-container">
       <div class="info-header">
-        <div class="info-left">Stuffed mushrooms </div>
-        <div class="info-right"> Andrea Gralow</div>
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
+        <div class="info-left">Stuffed mushrooms</div>
+        
+        <!-- Wrap in <a> tag for click functionality -->
+        <a href="/pages/FF/pfp1a.html" class="info-right">Anna Smith</a>
+    </div>
+      
+      <div class="info-categories">Prep time: 06-10 min | Diffeculty: Medium | 5 Servings | #Dessert </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p> A crispy, savory mixture of panko bread crumbs, pine nuts, sun-dried tomatoes, herbs, and pecorino cheese fills juicy roasted mushroom caps. These bite-sized apps are easy to make and SO delicious.</p>
       </div>
-      <div class="info-categories">#Appetizers   #Gluten-Free   #Party Snacks</div>
+
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
-        Cremini or white button mushrooms<br>
-        Extra-virgin olive oil (Spanish Hojiblanca preferred)<br>
-        Salt and black pepper<br>
-        Baby spinach<br>
-        Roasted red peppers (store-bought or homemade)<br>
-        Yellow onions<br>
-        Minced garlic cloves<br>
-        Italian seasoning (homemade or store-bought)<br>
-        Whole milk ricotta cheese<br>
-        Parmesan cheese<br>
-        Minced parsley (for garnish)
+          Cremini or white button mushrooms<br>
+          Extra-virgin olive oil (Spanish Hojiblanca preferred)<br>
+          Salt and black pepper<br>
+          Baby spinach<br>
+          Roasted red peppers (store-bought or homemade)<br>
+          Yellow onions<br>
+          Minced garlic cloves<br>
+          Italian seasoning (homemade or store-bought)<br>
+          Whole milk ricotta cheese<br>
+          Parmesan cheese<br>
+          Minced parsley (for garnish)
         </p>
-
       </div>
+
       <div class="info-steps">
         <h3>Steps</h3>
         <p>
-        Step 1: Preheat oven to 375°F.<br>
-        Step 2: Wash and de-stem mushrooms, reserving stems. Season caps with olive oil, salt, and pepper, then place hollow side up on a baking sheet.<br>
-        Step 3: In a skillet, heat olive oil and cook chopped mushroom stems, roasted red pepper, onion, garlic, and seasoning until softened. Add spinach and cook until wilted.<br>
-        Step 4: Transfer mixture to a bowl, stir in ricotta.<br>
-        Step 5: Stuff mushroom caps with filling, top with parmesan, and bake for 20 minutes. Broil for 2-3 minutes to crisp cheese. Garnish with parsley and serve.
+          Step 1: Preheat oven to 375°F.<br>
+          Step 2: Wash and de-stem mushrooms, reserving stems. Season caps with olive oil, salt, and pepper, then place hollow side up on a baking sheet.<br>
+          Step 3: In a skillet, heat olive oil and cook chopped mushroom stems, roasted red pepper, onion, garlic, and seasoning until softened. Add spinach and cook until wilted.<br>
+          Step 4: Transfer mixture to a bowl, stir in ricotta.<br>
+          Step 5: Stuff mushroom caps with filling, top with parmesan, and bake for 20 minutes. Broil for 2-3 minutes to crisp cheese. Garnish with parsley and serve.
         </p>
-          </div>
+      </div>
     </div>
   </div>
 
@@ -58,5 +82,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

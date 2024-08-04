@@ -68,3 +68,13 @@ body {
     width: 100%;
     bottom: 0;
 }
+
+.info-right {
+    color: #FFFFFF; /* Ensure text color is white */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
+
+.info-right:hover {
+    text-decoration: underline; /* Add underline on hover for better UX */
+}

@@ -4,7 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 13</title>
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +29,19 @@
 
     <div class="info-container">
       <div class="info-header">
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
         <div class="info-left">Hot Spinach Artichoke Dip</div>
-        <div class="info-right">Melissa Stadler</div>
+
+        <a href="/pages/FF/pfp2a.html" class="info-right">Juliakim</a>
       </div>
-      <div class="info-categories">#Party Food #Cheesy Dips</div>
+      <div class="info-categories">Prep time: 38 min | Diffeculty: Easy | 2 Servings | #Dips </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p> This spinach artichoke dip is delicious. It's so cheesy and fragrant. If you don't like artichokes, don't worry — you'll never know they're in there! My only question is: Is it okay to eat it with a spoon right out of the dish?</p>
+      </div>
+    
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -59,5 +79,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>

@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/styles/cards.css">
-  <title>Card 1</title>
+  <title>Card 4</title>
+
+  <style>
+    .info-header {
+      display: flex;
+      align-items: center;
+    }
+    .like-button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+
 </head>
 <body>
   <!-- Back Button -->
@@ -18,10 +30,19 @@
 
     <div class="info-container">
       <div class="info-header">
+        <img id="like-icon" class="like-button" width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/like--v1.png" alt="like button" onclick="toggleLike()"/>
+        
         <div class="info-left">Cheesy Zucchini Lasagna</div>
-        <div class="info-right">Andy</div>
+        <a href="/pages/FF/pfp3.html" class="info-right">Andy</a>
       </div>
-      <div class="info-categories">#Cheesy  #Low carb,</div>
+
+      <div class="info-categories">Prep time: 1hr 15min | Diffeculty: Hard | 10 Servings | #Dinner </div>
+     
+      <div>
+        <h3>Details</h3>
+        <p>Thanks to jarred marinara sauce and oven-ready lasagna noodles, this labor-of-love kind of meal can be ready in about an hour.</p>
+      </div>
+
       <div class="info-ingredients">
         <h3>Ingredients</h3>
         <p>
@@ -57,5 +78,16 @@
       <p>All Rights Reserved © Gourmet Link 2024</p>
     </div>
   </section>
+
+  <script>
+    function toggleLike() {
+      var likeIcon = document.getElementById('like-icon');
+      if (likeIcon.src.includes('FFFFFF')) {
+        likeIcon.src = 'https://img.icons8.com/ios-filled/50/FA5252/like--v1.png';
+      } else {
+        likeIcon.src = 'https://img.icons8.com/ios/50/FFFFFF/like--v1.png';
+      }
+    }
+  </script>
 </body>
 </html>
